@@ -15,6 +15,10 @@ public class LeetCode9 {
    public static class Solution {
         public static boolean isPalindrome(int x) {
 
+            if (x < 0){
+                return false;
+            }
+
             if (x == reverse(x)){
                 return true;
             }
@@ -22,6 +26,7 @@ public class LeetCode9 {
             return false;
 
         }
+
 
 
         public static int reverse(int x) {
